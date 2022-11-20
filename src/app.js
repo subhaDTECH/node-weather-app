@@ -6,13 +6,13 @@ const port=process.env.PORT ||3000;
 
 //set meddle ware
 //set static file
-
+const hbs=require("hbs");
 const staticPath=path.join(__dirname,"../public");
 const templetsPath=path.join(__dirname,"../templets/views");
 const partialsPath=path.join(__dirname,"../templets/partials");
 console.log(templetsPath);
 console.log(staticPath);
-const hbs=require("hbs");
+// const hbs=require("hbs");
 app.set('view engine',"hbs");
  app.use(express.static(staticPath));
  
